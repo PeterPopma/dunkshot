@@ -11,7 +11,7 @@ namespace Dunkshot
     {
         DateTime date;
         string name;
-        int gameTimeMilliSeconds;
+        int score;
         Texture2D photo;
 
         public Highscore()
@@ -19,10 +19,10 @@ namespace Dunkshot
 
         }
 
-        public Highscore(DateTime date_, int time_, Texture2D texture_)
+        public Highscore(DateTime date_, int score_, Texture2D texture_)
         {
             date = date_;
-            gameTimeMilliSeconds = time_;
+            Score = score_;
             photo = texture_;
         }
 
@@ -52,19 +52,6 @@ namespace Dunkshot
             }
         }
 
-        public int GameTimeMilliSeconds
-        {
-            get
-            {
-                return gameTimeMilliSeconds;
-            }
-
-            set
-            {
-                gameTimeMilliSeconds = value;
-            }
-        }
-
         public Texture2D Photo
         {
             get
@@ -77,5 +64,7 @@ namespace Dunkshot
                 photo = value;
             }
         }
+
+        public int Score { get => score; set => score = value; }
     }
 }

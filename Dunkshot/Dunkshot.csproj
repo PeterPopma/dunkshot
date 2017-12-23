@@ -41,12 +41,21 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Ball.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Font.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Highscore.cs" />
+    <Compile Include="Particle.cs" />
+    <Compile Include="ParticleManager.cs" />
+    <Compile Include="ParticleState.cs" />
+    <Compile Include="ParticleSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shattered.cs" />
+    <Compile Include="ShatteredPart.cs" />
+    <Compile Include="ShatterItem.cs" />
+    <Compile Include="SmokePlumeParticleSystem.cs" />
     <Compile Include="VideoCapture.cs" />
   </ItemGroup>
   <ItemGroup>
